@@ -1,0 +1,161 @@
+
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: #71827f71;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+html{
+  scroll-behavior: smooth; 
+}
+body {
+font-family: "Montserrat",Arial, sans-serif;
+background-color:#B4CCC7 ;
+}
+.hero {
+background-color: #B4CCC7 ;
+background-size: cover;
+height: 75vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-family: 'Poppins', sans-serif;
+}
+.hero h1 {
+font-size: 4rem;
+}
+.hero p {
+font-size: 1.5rem;
+}
+.services .icon {
+font-size: 3rem;
+margin-bottom: 20px;
+color: #f15a24;
+
+}
+.plans {
+padding: 50px 0;
+}
+footer {
+background-color: #343a40;
+color: white;
+padding: 30px 0;
+}
+footer a {
+color: white;
+}
+
+.navbg{
+  background-color: #B4CCC7;
+}
+
+/*CSS para la animación de la flecha*/
+.arrow-down {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 3rem;
+  color: white;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+   }
+  40% {
+      transform: translateY(10px);
+  }
+  60% {
+      transform: translateY(5px);
+  }
+}
+
+
+/*Codigo CSS para añadir un subrayado debajo de cada elemento del nav que sea nav-      link*/
+.navbar-nav .nav-link {
+position: relative;
+font-size: 18px;
+font-weight: 500;
+padding: 5px 0;
+display: inline-block;
+}
+
+/* Usamos ::after para crear la línea debajo de cada enlace */
+.navbar-nav .nav-link::after {
+content: '';
+position: absolute; 
+width: 100%; 
+height: 2px; 
+bottom: 0; 
+left: 0; 
+background-color: #feb665; 
+transform: scaleX(0); 
+transition: transform 0.3s ease;
+}
+
+/* Efecto hover: la línea se expande solo debajo del enlace */
+.navbar-nav .nav-link:hover::after {
+transform: scaleX(1);
+} 
+
+.titulo1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400; /* Montserrat Light */
+      color: #645a4c;
+  }
+.titulo2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; /* Montserrat Extra Bold */
+  color: #645a4c;
+}
+
+.lifted-div {
+  width: 100%;
+  padding: 10%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 80px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box; /* ensures padding is included in total width */
+}
+
+.content {
+  flex: 1;
+}
+
+.image-container {
+  margin-left: 20px;
+}
+
+.image-container img {
+  width: 100px;
+  border-radius: 5px;
+}
